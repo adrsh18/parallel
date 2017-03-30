@@ -1,1 +1,2 @@
-# parallel
+# Parallel Algorithms
+Course materials

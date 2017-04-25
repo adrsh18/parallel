@@ -1,0 +1,34 @@
+#!/bin/sh
+#SBATCH --partition=debug
+#SBATCH --time=00:15:00
+#SBATCH --nodes=4
+#SBATCH --ntasks-per-node=1
+##SBATCH --constraint=CPU-L5630
+#SBATCH --job-name="dtriangulation"
+#SBATCH --output=dt.log
+#SBATCH --mail-user=adarshpr@buffalo.edu
+#SBATCH --mail-type=ALL
+##SBATCH --requeue
+
+echo "SLURMTMPDIR="$SLURMTMPDIR
+echo "SLURM_JOBID="$SLURM_JOBID
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
+echo "SLURM_NNODES"=$SLURM_NNODES
+
+module load intel-mpi/2017.0.1
+
+sbcast main $SLURMTMPDIR/main
+sbcast points.csv $SLURMTMPDIR/points.csv
+
+cd $SLURMTMPDIR
+pwd
+
+echo "SBATCH:: Starting 'main'"
+echo "================================================"
+
+srun ./main points.csv 8 dt-edges.txt
+
+echo "================================================"
+ls -ltr | grep dt-edges.txt
+
+echo "Finished!"

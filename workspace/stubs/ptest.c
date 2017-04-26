@@ -24,6 +24,7 @@ int main(int argc, char **argv)
         
         if(rank % power(2, i) == 0) {
             endPoint = rank + power(2, i-1);
+            if(endPoint >= size) {continue;}
             printf("%s Receiving from %d\n", logger_string(INFO), endPoint);
             MPI_Recv(data, 1, MPI_INT, endPoint, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
             sum = sum + data[0];

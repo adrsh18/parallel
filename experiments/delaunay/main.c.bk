@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     int dSize = sizeof(double);
     MPI_Datatype pointTypes[3] = {MPI_FLOAT, MPI_FLOAT, MPI_LONG}, edgeTypes[6] = {MPI_LONG, MPI_LONG, MPI_LONG, MPI_LONG, MPI_LONG, MPI_LONG};
     int pointBlocklen[3] = {1,1,1}, edgeBlocklen[6] = {1,1,1,1,1,1};
-    MPI_Aint pointDisp[3] = {0, sizeof(double), 2*sizeof(double) };
+    MPI_Aint pointDisp[3] = {0, sizeof(float), 2*sizeof(float) };
     MPI_Aint  edgeDisp[6] = {0, dSize, 2*dSize, 3*dSize, 4*dSize, 5*dSize};
     
     long leftEdgeIdx, rightEdgeIdx;
@@ -75,8 +75,8 @@ int main(int argc, char **argv)
     long neighborLeftEdgeIdx, neighborRightEdgeIdx;
 
     //sum = rank;
-    Point *neighborPoints;
-    Edge *neighborEdges;
+    Point neighborPoints[nPoints/2];
+    Edge neighborEdges[(3*nPoints/2) - 6];
 
     clock_t localDTBegin = clock();
 
@@ -94,30 +94,22 @@ int main(int argc, char **argv)
         
         if(rank % power(2, p) == 0) {
             endPoint = rank + power(2, p-1);
-            if(endPoint >= size) { logger(INFO, "Nothing to do in this pass"); continue; }
-            MPI_Recv(data, 5, MPI_LONG, endPoint, p, MPI_COMM_WORLD, &status);
-            long offset = edgeCounter;
-            nNeighborEdges = data[0];
-            neighborLeftEdgeIdx = data[1]+offset; neighborRightEdgeIdx = data[2]+offset;
-            neighborEdges = malloc(sizeof(Edge) * nNeighborEdges);
-            neighborStart = data[3];
-            neighborEnd = data[4];
-            neighborPoints = malloc(sizeof(Point) * (neighborEnd - neighborStart));
+            neighborStart = endPoint * dataPerP;
+            neighborEnd = neighborStart + (power(2, p-1) * dataPerP);
             printf("%s Receiving from %d\n", logger_string(INFO), endPoint);
-            MPI_Recv(neighborPoints, neighborEnd - neighborStart, MPIPoint, endPoint, p, MPI_COMM_WORLD, &status);
+            MPI_Recv(neighborPoints, neighborEnd - neighborStart, MPIPoint, endPoint, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
             //MPI_Recv(neighborEdges, nNeighborEdges, MPIEdge, endPoint, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
             //sum = sum + data[0];
-            //long offset = edgeCounter;
+            long offset = edgeCounter;
             for(i = 0; i < (neighborEnd-neighborStart); i++) {points[neighborStart+i].entryPoint = neighborPoints[i].entryPoint + offset; }
-            //MPI_Recv(data, 3, MPI_LONG, endPoint, p, MPI_COMM_WORLD, &status);
-            //nNeighborEdges = data[0];
-            //neighborLeftEdgeIdx = data[1]+offset; neighborRightEdgeIdx = data[2]+offset;
-            //neighborEdges = malloc(sizeof(Edge) * nNeighborEdges);
+            MPI_Recv(data, 3, MPI_LONG, endPoint, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+            nNeighborEdges = data[0];
+            neighborLeftEdgeIdx = data[1]+offset; neighborRightEdgeIdx = data[2]+offset;
             printf("%s About to receive %ld edges\n", logger_string(INFO), nNeighborEdges);
-            MPI_Recv(neighborEdges, nNeighborEdges, MPIEdge, endPoint, p, MPI_COMM_WORLD, &status);
+            MPI_Recv(neighborEdges, nNeighborEdges, MPIEdge, endPoint, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
             for(i = 0; i < nNeighborEdges; i++) {
                 if(neighborEdges[i].origin == -1 || neighborEdges[i].destination == -1) { edgeCounter++;continue; }
-                //if(rank == 0) printEdge(edgeCounter);
+                //printEdge(edgeCounter);
                 edges[edgeCounter].origin = neighborEdges[i].origin;
                 edges[edgeCounter].destination = neighborEdges[i].destination;
 
@@ -125,11 +117,10 @@ int main(int argc, char **argv)
                 edges[edgeCounter].originPrev = neighborEdges[i].originPrev + offset;
                 edges[edgeCounter].destinationNext = neighborEdges[i].destinationNext + offset;
                 edges[edgeCounter].destinationPrev = neighborEdges[i].destinationPrev + offset;
-                //if(rank == 0) printEdge(edgeCounter);
+                //printEdge(edgeCounter);
                 edgeCounter++;
             }
-            free(neighborPoints);
-            free(neighborEdges); 
+            
             logger(INFO, "About to merge both regions");
 
             merge(rightEdgeIdx, myEnd-1, neighborLeftEdgeIdx, neighborStart, &lowerCommonTangentIdx);
@@ -147,18 +138,16 @@ int main(int argc, char **argv)
             logger(INFO, "Finished re-assignments");
             //printf("%s myEnd: %ld; neighborStart: %ld\n", logger_string(INFO), myEnd, neighborStart);
             myEnd = neighborEnd;
-            //printEdges(myStart, myEnd);
         } else if(rank % power(2, p) == power(2, p-1)) {
             endPoint = rank - power(2, p-1);
             printf("%s Sending to %d\n", logger_string(INFO), endPoint);
-            data[0] = edgeCounter; data[1] = leftEdgeIdx; data[2] = rightEdgeIdx; data[3] = myStart; data[4] = myEnd;
-            MPI_Send(data, 5, MPI_LONG, endPoint, p, MPI_COMM_WORLD);
+            data[0] = edgeCounter; data[1] = leftEdgeIdx; data[2] = rightEdgeIdx;
             //logger(INFO, "Last point");
             //printPoint(myEnd-1);
-            MPI_Send(&points[myStart], myEnd-myStart, MPIPoint, endPoint, p, MPI_COMM_WORLD);
-            //MPI_Send(data, 3, MPI_LONG, endPoint, p, MPI_COMM_WORLD);
+            MPI_Send(&points[myStart], myEnd-myStart, MPIPoint, endPoint, 11, MPI_COMM_WORLD);
+            MPI_Send(data, 3, MPI_LONG, endPoint, 11, MPI_COMM_WORLD);
             printf("%s About to send %ld edges\n", logger_string(INFO),edgeCounter);
-            MPI_Send(edges, edgeCounter, MPIEdge, endPoint, p, MPI_COMM_WORLD);
+            MPI_Send(edges, edgeCounter, MPIEdge, endPoint, 11, MPI_COMM_WORLD);
         }
     }
 
@@ -169,9 +158,6 @@ int main(int argc, char **argv)
 
     timeElapsed = (double) (timerEnd - timerBegin) / CLOCKS_PER_SEC; 
     printf("%s Total execution time is %lf seconds\n", logger_string(INFO), timeElapsed);
-
-    timeElapsed = (double) (timerEnd - localDTBegin) / CLOCKS_PER_SEC;
-    printf("%s Actual Computation Time (with comm.cost) is %lf seconds\n", logger_string(INFO), timeElapsed);
 
     if(rank == 0) {
         //for(i = 0; i < edgeCounter; i++) printEdge(i);
@@ -216,14 +202,14 @@ void readOrFail(int argc, char **argv)
         points[j].entryPoint = -1;
     }
 
-    while(fscanf(inputFile, "%ld,%lf,%lf", &temp, &points[i].x, &points[i].y) == 3)
+    while(fscanf(inputFile, "%ld,%f,%f", &temp, &points[i].x, &points[i].y) == 3)
     {
         i++;
     }
     fclose(inputFile);
 
     printf("%ld points read into memory from file.\n", i);
-    numEdges = logTwo(numPoints)*numPoints - 6;
+    numEdges = numRecursiveHalvingPasses(numPoints)*numPoints - 6;
     edges = malloc(sizeof(Edge) * numEdges);
     for(j=0;j<numEdges;j++) {
         edges[j].origin = -1;

@@ -1,0 +1,71 @@
+[adarshpr@rush:~/parallel/experiments]$ mpirun -np 5 ./awesome points.csv 60 awesome-edges.txt
+60 points read into memory from file.
+Tue Apr 25 19:49:52 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.000000 seconds
+60 points read into memory from file.
+Tue Apr 25 19:49:52 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.000000 seconds
+60 points read into memory from file.
+Tue Apr 25 19:49:52 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.000000 seconds
+60 points read into memory from file.
+Tue Apr 25 19:49:52 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.000000 seconds
+60 points read into memory from file.
+Tue Apr 25 19:49:52 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Begin
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Number of Edges: 32
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Finished triangulation of local points in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Receiving from 1
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: Begin
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: Number of Edges: 34
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: Finished triangulation of local points in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: Sending to 0
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Begin
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Number of Edges: 37
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Finished triangulation of local points in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Receiving from 3
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: Begin
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: Number of Edges: 33
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: Finished triangulation of local points in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: Sending to 2
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Begin
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Number of Edges: 34
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Finished triangulation of local points in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Nothing to do in this pass
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Nothing to do in this pass
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Sending to 0
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: About to receive 34 edges
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: About to send 34 edges
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: About to receive 33 edges
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: About to merge both regions
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: About to send 33 edges
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: Finished merging in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: About to send 34 edges
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Finished merging in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Total execution time is 0.010000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Done merging :)
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: Total execution time is 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 3 of 5] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: Finished merging in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Finished re-assignments
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Sending to 0
+Tue Apr 25 19:49:52 2017 [Processor 4 of 5] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: Total execution time is 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 1 of 5] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: About to send 90 edges
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Finished merging in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Total execution time is 0.010000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 2 of 5] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: About to merge both regions
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Done merging :)
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Finished re-assignments
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Receiving from 2
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: About to receive 90 edges
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: About to merge both regions
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Done merging :)
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Finished re-assignments
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Receiving from 4
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: About to receive 34 edges
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: About to merge both regions
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Done merging :)
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Finished re-assignments
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Finished merging in 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Total execution time is 0.000000 seconds
+Tue Apr 25 19:49:52 2017 [Processor 0 of 5] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds

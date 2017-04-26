@@ -1,0 +1,14 @@
+SLURMTMPDIR=/scratch/6577317
+SLURM_JOBID=6577317
+SLURM_JOB_NODELIST=cpn-k08-40-01
+SLURM_NODENAME=
+SLURM_NNODES=1
+ Intel-MPI is in your path.  This is adequate for compiling and running most codes.  Source the /util/academic/intel/17.0/compilers_and_libraries_2017/linux/mpi/intel64/bin/mpivars.sh file for more features.
+/scratch/6577317
+SBATCH:: Starting 'main'
+================================================
+Read 256 points from inputFile
+================================================
+-rw-r--r-- 1 adarshpr cse633s17   31 Apr 18 17:41 dt-edges.txt
+Files cleanedup!
+Finished!

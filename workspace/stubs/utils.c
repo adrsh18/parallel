@@ -3,7 +3,7 @@
 
 int numRecursiveHalvingPasses(int nProcs)
 {
-    return (int) (log(nProcs)/log(2));
+    return (int) ceil((log(nProcs)/log(2)));
 }
 
 int power(int x, int y)

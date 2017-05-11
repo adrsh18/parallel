@@ -1,0 +1,371 @@
+SLURMTMPDIR=/scratch/6622793
+SLURM_JOBID=6622793
+SLURM_JOB_NODELIST=cpn-d14-38,cpn-d15-[04,07,09,28,33,38],cpn-d16-[07-08]
+SLURM_NODENAME=
+SLURM_NNODES=9
+ Intel-MPI is in your path.  This is adequate for compiling and running most codes.  Source the /util/academic/intel/17.0/compilers_and_libraries_2017/linux/mpi/intel64/bin/mpivars.sh file for more features.
+/scratch/6622793
+SBATCH:: Starting 'main'
+================================================
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.680000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=130a3b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.730000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=1bc23b0
+[0] MPI startup(): Multi-threaded optimized library
+4194304 points read into memory from file.
+Sun Apr 30 14:52:36 2017 [Processor 0 of 0] [INFO]: Finished reading input in 6.750000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=17d63b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.640000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=11fa3b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.830000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=1d853b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.870000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=1fa63b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.670000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=d173b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.730000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=b043b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.770000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=10573b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:35 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.760000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=21dd3b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:35 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.720000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=1c9b3b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:35 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.830000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=16293b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:35 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.770000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=1e503b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:34 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.730000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=22b73b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:35 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.930000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=1ff43b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:35 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.880000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=215f3b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:35 2017 [Processor 0 of 0] [INFO]: Finished reading input in 5.830000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=1c3b3b0
+4194304 points read into memory from file.
+Sun Apr 30 14:52:37 2017 [Processor 0 of 0] [INFO]: Finished reading input in 7.830000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=18c03b0
+[6] MPID_nem_ofacm_init(): Init
+[7] MPID_nem_ofacm_init(): Init
+[8] MPID_nem_ofacm_init(): Init
+[17] MPID_nem_ofacm_init(): Init
+[10] MPID_nem_ofacm_init(): Init
+[3] MPID_nem_ofacm_init(): Init
+[16] MPID_nem_ofacm_init(): Init
+[11] MPID_nem_ofacm_init(): Init
+[0] MPID_nem_ofacm_init(): Init
+[1] MPID_nem_ofacm_init(): Init
+[5] MPID_nem_ofacm_init(): Init
+[4] MPID_nem_ofacm_init(): Init
+[9] MPID_nem_ofacm_init(): Init
+[15] MPID_nem_ofacm_init(): Init
+[14] MPID_nem_ofacm_init(): Init
+[2] MPID_nem_ofacm_init(): Init
+[13] MPID_nem_ofacm_init(): Init
+[12] MPID_nem_ofacm_init(): Init
+[0] MPI startup(): shm and ofa data transfer modes
+[1] MPI startup(): shm and ofa data transfer modes
+[7] MPI startup(): shm and ofa data transfer modes
+[6] MPI startup(): shm and ofa data transfer modes
+[13] MPI startup(): shm and ofa data transfer modes
+[5] MPI startup(): shm and ofa data transfer modes
+[12] MPI startup(): shm and ofa data transfer modes
+[4] MPI startup(): shm and ofa data transfer modes
+[3] MPI startup(): shm and ofa data transfer modes
+[17] MPI startup(): shm and ofa data transfer modes
+[2] MPI startup(): shm and ofa data transfer modes
+[16] MPI startup(): shm and ofa data transfer modes
+[15] MPI startup(): shm and ofa data transfer modes
+[14] MPI startup(): shm and ofa data transfer modes
+[11] MPI startup(): shm and ofa data transfer modes
+[10] MPI startup(): shm and ofa data transfer modes
+[9] MPI startup(): shm and ofa data transfer modes
+[8] MPI startup(): shm and ofa data transfer modes
+Sun Apr 30 14:52:37 2017 [Processor 1 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 12 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 3 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 4 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 7 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 10 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 8 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 14 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 17 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 15 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 9 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 5 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 6 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 11 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 13 of 18] [INFO]: Begin
+Sun Apr 30 14:52:37 2017 [Processor 16 of 18] [INFO]: Begin
+[0] MPI startup(): Rank    Pid      Node name                        Pin cpu
+[0] MPI startup(): 0       18060    cpn-d14-38.cbls.ccr.buffalo.edu  +1
+Sun Apr 30 14:52:37 2017 [Processor 2 of 18] [INFO]: Begin
+[0] MPI startup(): 1       18061    cpn-d14-38.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 2       18442    cpn-d15-04.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 3       18443    cpn-d15-04.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 4       3789     cpn-d15-07.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 5       3790     cpn-d15-07.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 6       24129    cpn-d15-09.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 7       24130    cpn-d15-09.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 8       7345     cpn-d15-28.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 9       7346     cpn-d15-28.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 10      32621    cpn-d15-33.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 11      32622    cpn-d15-33.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 12      30164    cpn-d15-38.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 13      30165    cpn-d15-38.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 14      29268    cpn-d16-07.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 15      29269    cpn-d16-07.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 16      30080    cpn-d16-08.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 17      30081    cpn-d16-08.cbls.ccr.buffalo.edu  +1
+Sun Apr 30 14:52:37 2017 [Processor 0 of 18] [INFO]: Begin
+Sun Apr 30 14:52:38 2017 [Processor 17 of 18] [INFO]: Number of Edges: 2924301
+Sun Apr 30 14:52:38 2017 [Processor 17 of 18] [INFO]: Finished triangulation of local points in 1.070000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 17 of 18] [INFO]: Sending to 16
+Sun Apr 30 14:52:38 2017 [Processor 5 of 18] [INFO]: Number of Edges: 2923414
+Sun Apr 30 14:52:38 2017 [Processor 5 of 18] [INFO]: Finished triangulation of local points in 1.070000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 5 of 18] [INFO]: Sending to 4
+Sun Apr 30 14:52:38 2017 [Processor 3 of 18] [INFO]: Number of Edges: 2922662
+Sun Apr 30 14:52:38 2017 [Processor 3 of 18] [INFO]: Finished triangulation of local points in 1.070000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 3 of 18] [INFO]: Sending to 2
+Sun Apr 30 14:52:38 2017 [Processor 7 of 18] [INFO]: Number of Edges: 2923471
+Sun Apr 30 14:52:38 2017 [Processor 7 of 18] [INFO]: Finished triangulation of local points in 1.080000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 7 of 18] [INFO]: Sending to 6
+Sun Apr 30 14:52:38 2017 [Processor 9 of 18] [INFO]: Number of Edges: 2923436
+Sun Apr 30 14:52:38 2017 [Processor 9 of 18] [INFO]: Finished triangulation of local points in 1.080000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 9 of 18] [INFO]: Sending to 8
+Sun Apr 30 14:52:38 2017 [Processor 11 of 18] [INFO]: Number of Edges: 2922703
+Sun Apr 30 14:52:38 2017 [Processor 11 of 18] [INFO]: Finished triangulation of local points in 1.090000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 11 of 18] [INFO]: Sending to 10
+Sun Apr 30 14:52:38 2017 [Processor 13 of 18] [INFO]: Number of Edges: 2923451
+Sun Apr 30 14:52:38 2017 [Processor 13 of 18] [INFO]: Finished triangulation of local points in 1.090000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 13 of 18] [INFO]: Sending to 12
+Sun Apr 30 14:52:38 2017 [Processor 1 of 18] [INFO]: Number of Edges: 2922457
+Sun Apr 30 14:52:38 2017 [Processor 1 of 18] [INFO]: Finished triangulation of local points in 1.080000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 1 of 18] [INFO]: Sending to 0
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Number of Edges: 2923351
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Finished triangulation of local points in 1.090000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Receiving from 17
+Sun Apr 30 14:52:38 2017 [Processor 4 of 18] [INFO]: Number of Edges: 2923578
+Sun Apr 30 14:52:38 2017 [Processor 15 of 18] [INFO]: Number of Edges: 2923287
+Sun Apr 30 14:52:38 2017 [Processor 15 of 18] [INFO]: Finished triangulation of local points in 1.090000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 4 of 18] [INFO]: Finished triangulation of local points in 1.080000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 15 of 18] [INFO]: Sending to 14
+Sun Apr 30 14:52:38 2017 [Processor 4 of 18] [INFO]: Receiving from 5
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: Number of Edges: 2923156
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: Finished triangulation of local points in 1.090000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: Receiving from 9
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: Number of Edges: 2922445
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: Finished triangulation of local points in 1.100000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: Receiving from 7
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: Number of Edges: 2922308
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: Finished triangulation of local points in 1.090000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: Receiving from 3
+Sun Apr 30 14:52:38 2017 [Processor 17 of 18] [INFO]: About to send 2924301 edges
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: Number of Edges: 2922796
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: Finished triangulation of local points in 1.100000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: Receiving from 15
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: Number of Edges: 2922977
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: Finished triangulation of local points in 1.110000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 5 of 18] [INFO]: About to send 2923414 edges
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: Receiving from 11
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: About to receive 2924301 edges
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: Number of Edges: 2923691
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: Finished triangulation of local points in 1.100000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: Receiving from 1
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: Number of Edges: 2922784
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: Finished triangulation of local points in 1.110000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: Receiving from 13
+Sun Apr 30 14:52:38 2017 [Processor 4 of 18] [INFO]: About to receive 2923414 edges
+Sun Apr 30 14:52:38 2017 [Processor 9 of 18] [INFO]: About to send 2923436 edges
+Sun Apr 30 14:52:38 2017 [Processor 7 of 18] [INFO]: About to send 2923471 edges
+Sun Apr 30 14:52:38 2017 [Processor 3 of 18] [INFO]: About to send 2922662 edges
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: About to receive 2923436 edges
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: About to receive 2923471 edges
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: About to receive 2922662 edges
+Sun Apr 30 14:52:38 2017 [Processor 15 of 18] [INFO]: About to send 2923287 edges
+Sun Apr 30 14:52:38 2017 [Processor 11 of 18] [INFO]: About to send 2922703 edges
+Sun Apr 30 14:52:38 2017 [Processor 1 of 18] [INFO]: About to send 2922457 edges
+Sun Apr 30 14:52:38 2017 [Processor 13 of 18] [INFO]: About to send 2923451 edges
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: About to receive 2923287 edges
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: About to receive 2922703 edges
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: About to receive 2922457 edges
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: About to receive 2923451 edges
+Sun Apr 30 14:52:38 2017 [Processor 7 of 18] [INFO]: Finished merging in 0.090000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 7 of 18] [INFO]: Total execution time is 7.060000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 7 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.170000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 17 of 18] [INFO]: Finished merging in 0.110000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 17 of 18] [INFO]: Total execution time is 6.990000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 17 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.180000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 9 of 18] [INFO]: Finished merging in 0.100000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 9 of 18] [INFO]: Total execution time is 6.890000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 9 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.180000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 3 of 18] [INFO]: Finished merging in 0.110000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 3 of 18] [INFO]: Total execution time is 6.970000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 3 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.180000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 11 of 18] [INFO]: Finished merging in 0.100000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 1 of 18] [INFO]: Finished merging in 0.100000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 11 of 18] [INFO]: Total execution time is 7.020000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 11 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.190000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 1 of 18] [INFO]: Total execution time is 6.930000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 1 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.180000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 13 of 18] [INFO]: Finished merging in 0.110000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 13 of 18] [INFO]: Total execution time is 6.880000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 13 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.200000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 6 of 18] [INFO]: Sending to 4
+Sun Apr 30 14:52:38 2017 [Processor 15 of 18] [INFO]: Finished merging in 0.130000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 15 of 18] [INFO]: Total execution time is 7.000000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 15 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.220000 seconds
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Nothing to do in this pass
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Nothing to do in this pass
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Nothing to do in this pass
+Sun Apr 30 14:52:38 2017 [Processor 16 of 18] [INFO]: Sending to 0
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: Sending to 0
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: Receiving from 10
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: Sending to 8
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: Receiving from 2
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: Sending to 12
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: Receiving from 14
+Sun Apr 30 14:52:38 2017 [Processor 2 of 18] [INFO]: About to send 5851168 edges
+Sun Apr 30 14:52:38 2017 [Processor 10 of 18] [INFO]: About to send 5851993 edges
+Sun Apr 30 14:52:38 2017 [Processor 8 of 18] [INFO]: About to receive 5851993 edges
+Sun Apr 30 14:52:38 2017 [Processor 0 of 18] [INFO]: About to receive 5851168 edges
+Sun Apr 30 14:52:38 2017 [Processor 14 of 18] [INFO]: About to send 5852360 edges
+Sun Apr 30 14:52:38 2017 [Processor 12 of 18] [INFO]: About to receive 5852360 edges
+Sun Apr 30 14:52:39 2017 [Processor 2 of 18] [INFO]: Finished merging in 0.370000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 10 of 18] [INFO]: Finished merging in 0.360000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 2 of 18] [INFO]: Total execution time is 7.400000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 2 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.460000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 10 of 18] [INFO]: Total execution time is 7.350000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 10 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.470000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 14 of 18] [INFO]: Finished merging in 0.380000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 14 of 18] [INFO]: Total execution time is 7.480000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 14 of 18] [INFO]: Actual Computation Time (with comm.cost) is 1.480000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 0 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:39 2017 [Processor 0 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:39 2017 [Processor 0 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: Receiving from 12
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: Sending to 8
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: About to send 11711070 edges
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: About to receive 11711070 edges
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: Finished merging in 0.960000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: Total execution time is 7.840000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 12 of 18] [INFO]: Actual Computation Time (with comm.cost) is 2.070000 seconds
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:39 2017 [Processor 8 of 18] [INFO]: Sending to 0
+Sun Apr 30 14:52:40 2017 [Processor 5 of 18] [INFO]: Finished merging in 1.570000 seconds
+Sun Apr 30 14:52:40 2017 [Processor 5 of 18] [INFO]: Total execution time is 9.430000 seconds
+Sun Apr 30 14:52:40 2017 [Processor 5 of 18] [INFO]: Actual Computation Time (with comm.cost) is 2.640000 seconds
+Sun Apr 30 14:52:40 2017 [Processor 4 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:40 2017 [Processor 4 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:40 2017 [Processor 4 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:40 2017 [Processor 4 of 18] [INFO]: Receiving from 6
+Sun Apr 30 14:52:40 2017 [Processor 6 of 18] [INFO]: About to send 5852205 edges
+Sun Apr 30 14:52:40 2017 [Processor 4 of 18] [INFO]: About to receive 5852205 edges
+Sun Apr 30 14:52:49 2017 [Processor 6 of 18] [INFO]: Finished merging in 11.280000 seconds
+Sun Apr 30 14:52:49 2017 [Processor 6 of 18] [INFO]: Total execution time is 18.300000 seconds
+Sun Apr 30 14:52:49 2017 [Processor 6 of 18] [INFO]: Actual Computation Time (with comm.cost) is 12.380000 seconds
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:50 2017 [Processor 0 of 18] [INFO]: Receiving from 4
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: Sending to 0
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: About to send 11711723 edges
+Sun Apr 30 14:52:50 2017 [Processor 0 of 18] [INFO]: About to receive 11711723 edges
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: Finished merging in 11.860000 seconds
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: Total execution time is 20.820000 seconds
+Sun Apr 30 14:52:50 2017 [Processor 4 of 18] [INFO]: Actual Computation Time (with comm.cost) is 12.940000 seconds
+Sun Apr 30 14:52:50 2017 [Processor 0 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:50 2017 [Processor 0 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:50 2017 [Processor 0 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:50 2017 [Processor 0 of 18] [INFO]: Receiving from 8
+Sun Apr 30 14:52:51 2017 [Processor 8 of 18] [INFO]: About to send 23428465 edges
+Sun Apr 30 14:52:51 2017 [Processor 0 of 18] [INFO]: About to receive 23428465 edges
+Sun Apr 30 14:52:51 2017 [Processor 8 of 18] [INFO]: Finished merging in 13.000000 seconds
+Sun Apr 30 14:52:51 2017 [Processor 8 of 18] [INFO]: Total execution time is 19.910000 seconds
+Sun Apr 30 14:52:51 2017 [Processor 8 of 18] [INFO]: Actual Computation Time (with comm.cost) is 14.090000 seconds
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Receiving from 16
+Sun Apr 30 14:52:52 2017 [Processor 16 of 18] [INFO]: About to send 5853953 edges
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: About to receive 5853953 edges
+Sun Apr 30 14:52:52 2017 [Processor 16 of 18] [INFO]: Finished merging in 13.670000 seconds
+Sun Apr 30 14:52:52 2017 [Processor 16 of 18] [INFO]: Total execution time is 20.630000 seconds
+Sun Apr 30 14:52:52 2017 [Processor 16 of 18] [INFO]: Actual Computation Time (with comm.cost) is 14.760000 seconds
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: About to merge both regions
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Done merging :)
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Finished re-assignments
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Finished merging in 13.710000 seconds
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Total execution time is 20.610000 seconds
+Sun Apr 30 14:52:52 2017 [Processor 0 of 18] [INFO]: Actual Computation Time (with comm.cost) is 14.810000 seconds
+Sun Apr 30 14:52:57 2017 [Processor 1 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 7 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 11 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 9 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 13 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 15 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 3 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 17 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 5 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 6 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 10 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 14 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 2 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 16 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 0 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 4 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 12 of 18] [INFO]: End
+Sun Apr 30 14:52:57 2017 [Processor 8 of 18] [INFO]: End
+================================================
+-rw-r--r-- 1 adarshpr cse633s17 194656315 Apr 30 14:52 dt-edges.txt
+Files cleanedup!
+Finished!

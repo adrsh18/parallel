@@ -43,6 +43,7 @@ int main(int argc, char **argv)
     double timeElapsed;
 
     timerBegin = clock();
+    logger(INFO, "Initializations done. About to read input..");
 
     readOrFail(argc, argv);
 
@@ -70,6 +71,7 @@ int main(int argc, char **argv)
     long dataPerP = nPoints / size;
     long myStart = rank * dataPerP;
     long myEnd = myStart + dataPerP;
+    if(myEnd > nPoints ) { myEnd = nPoints; }
     long neighborStart, neighborEnd;
     long nNeighborEdges;
     long neighborLeftEdgeIdx, neighborRightEdgeIdx;
@@ -100,9 +102,11 @@ int main(int argc, char **argv)
             nNeighborEdges = data[0];
             neighborLeftEdgeIdx = data[1]+offset; neighborRightEdgeIdx = data[2]+offset;
             neighborEdges = malloc(sizeof(Edge) * nNeighborEdges);
+            logger(INFO, "Memory allocated for incoming edges");
             neighborStart = data[3];
             neighborEnd = data[4];
             neighborPoints = malloc(sizeof(Point) * (neighborEnd - neighborStart));
+            logger(INFO, "Memory allocated for incoming points");
             printf("%s Receiving from %d\n", logger_string(INFO), endPoint);
             MPI_Recv(neighborPoints, neighborEnd - neighborStart, MPIPoint, endPoint, p, MPI_COMM_WORLD, &status);
             //MPI_Recv(neighborEdges, nNeighborEdges, MPIEdge, endPoint, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
@@ -202,8 +206,10 @@ void readOrFail(int argc, char **argv)
     long numEdges = 0;
 
     FILE *inputFile = fopen(inputFileName, "r");
+    logger(INFO, "Opened input file. About to allocate memory");
 
     points = malloc(sizeof(Point) * numPoints);
+    logger(INFO, "Memory request for Points complete");
     if(points == NULL)
     {
         printf("Failed to allocate memory!\n");
@@ -224,7 +230,13 @@ void readOrFail(int argc, char **argv)
 
     printf("%ld points read into memory from file.\n", i);
     numEdges = logTwo(numPoints)*numPoints - 6;
+    logger(INFO, "About to allocate memory for edges");
     edges = malloc(sizeof(Edge) * numEdges);
+    logger(INFO, "Memory allocated for edges");
+    if(edges == NULL)
+    {
+        logger(ERROR, "Failed to get sufficient memory for Edges");
+    }
     for(j=0;j<numEdges;j++) {
         edges[j].origin = -1;
         edges[j].destination = -1;

@@ -1,0 +1,110 @@
+SLURMTMPDIR=/scratch/6658167
+SLURM_JOBID=6658167
+SLURM_JOB_NODELIST=cpn-d07-18-[01-02],cpn-d07-24-01,cpn-d07-33-02
+SLURM_NODENAME=
+SLURM_NNODES=4
+ Intel-MPI is in your path.  This is adequate for compiling and running most codes.  Source the /util/academic/intel/17.0/compilers_and_libraries_2017/linux/mpi/intel64/bin/mpivars.sh file for more features.
+/scratch/6658167
+SBATCH:: Starting 'main'
+================================================
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Initializations done. About to read input..
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Opened input file. About to allocate memory
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory request for Points complete
+131072 points read into memory from file.
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: About to allocate memory for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory allocated for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.180000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=19fb3c0
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Initializations done. About to read input..
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Opened input file. About to allocate memory
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory request for Points complete
+131072 points read into memory from file.
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: About to allocate memory for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory allocated for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.190000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=24bc3c0
+[0] MPI startup(): Multi-threaded optimized library
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Initializations done. About to read input..
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Opened input file. About to allocate memory
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory request for Points complete
+131072 points read into memory from file.
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: About to allocate memory for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory allocated for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.180000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=22403c0
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Initializations done. About to read input..
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Opened input file. About to allocate memory
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory request for Points complete
+131072 points read into memory from file.
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: About to allocate memory for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Memory allocated for edges
+Wed May 10 17:44:29 2017 [Processor 0 of 0] [INFO]: Finished reading input in 0.180000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=19cf3c0
+[3] MPI startup(): tcp data transfer mode
+Wed May 10 17:44:29 2017 [Processor 3 of 4] [INFO]: Begin
+[0] MPI startup(): tcp data transfer mode
+[0] MPI startup(): Rank    Pid      Node name                           Pin cpu
+[0] MPI startup(): 0       2241     cpn-d07-18-01.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 1       27359    cpn-d07-18-02.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 2       17699    cpn-d07-24-01.cbls.ccr.buffalo.edu  +1
+[0] MPI startup(): 3       9914     cpn-d07-33-02.cbls.ccr.buffalo.edu  +1
+Wed May 10 17:44:29 2017 [Processor 0 of 4] [INFO]: Begin
+[1] MPI startup(): tcp data transfer mode
+[2] MPI startup(): tcp data transfer mode
+Wed May 10 17:44:29 2017 [Processor 1 of 4] [INFO]: Begin
+Wed May 10 17:44:29 2017 [Processor 2 of 4] [INFO]: Begin
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Number of Edges: 328821
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: Number of Edges: 328839
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: Number of Edges: 328937
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Finished triangulation of local points in 0.120000 seconds
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: Finished triangulation of local points in 0.120000 seconds
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: Sending to 2
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Memory allocated for incoming edges
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: Finished triangulation of local points in 0.130000 seconds
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: Sending to 0
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Memory allocated for incoming points
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Receiving from 3
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Number of Edges: 329472
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Finished triangulation of local points in 0.130000 seconds
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Memory allocated for incoming edges
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Memory allocated for incoming points
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Receiving from 1
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: About to send 328937 edges
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: About to send 328839 edges
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: About to receive 328937 edges
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: About to receive 328839 edges
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: Finished merging in 0.120000 seconds
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: Total execution time is 0.440000 seconds
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: Actual Computation Time (with comm.cost) is 0.240000 seconds
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: Finished merging in 0.120000 seconds
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: Total execution time is 0.440000 seconds
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: Actual Computation Time (with comm.cost) is 0.250000 seconds
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: About to merge both regions
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Done merging :)
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Finished re-assignments
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Sending to 0
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: About to merge both regions
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Done merging :)
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Finished re-assignments
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Memory allocated for incoming edges
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Memory allocated for incoming points
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Receiving from 2
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: About to send 658851 edges
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: About to receive 658851 edges
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Finished merging in 0.410000 seconds
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Total execution time is 0.730000 seconds
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: Actual Computation Time (with comm.cost) is 0.530000 seconds
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: About to merge both regions
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Done merging :)
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Finished re-assignments
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Finished merging in 0.440000 seconds
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Total execution time is 0.770000 seconds
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: Actual Computation Time (with comm.cost) is 0.570000 seconds
+Wed May 10 17:44:30 2017 [Processor 0 of 4] [INFO]: End
+Wed May 10 17:44:30 2017 [Processor 1 of 4] [INFO]: End
+Wed May 10 17:44:30 2017 [Processor 3 of 4] [INFO]: End
+Wed May 10 17:44:30 2017 [Processor 2 of 4] [INFO]: End
+================================================
+-rw-r--r-- 1 adarshpr cse633s17 4837616 May 10 17:44 dt-edges.txt
+Files cleanedup!
+Finished!

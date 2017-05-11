@@ -1,0 +1,58 @@
+SLURMTMPDIR=/scratch/6636831
+SLURM_JOBID=6636831
+SLURM_JOB_NODELIST=cpn-f07-13
+SLURM_NODENAME=
+SLURM_NNODES=1
+ Intel-MPI is in your path.  This is adequate for compiling and running most codes.  Source the /util/academic/intel/17.0/compilers_and_libraries_2017/linux/mpi/intel64/bin/mpivars.sh file for more features.
+/scratch/6636831
+SBATCH:: Starting 'main'
+================================================
+Thu May  4 18:31:36 2017 [Processor 0 of 0] [INFO]: Initializations done. About to read input..
+Thu May  4 18:31:36 2017 [Processor 0 of 0] [INFO]: Opened input file. About to allocate memory
+Thu May  4 18:31:36 2017 [Processor 0 of 0] [INFO]: Memory request for Points complete
+4194304 points read into memory from file.
+Thu May  4 18:31:40 2017 [Processor 0 of 0] [INFO]: About to allocate memory for edges
+Thu May  4 18:31:40 2017 [Processor 0 of 0] [INFO]: Memory allocated for edges
+Thu May  4 18:31:43 2017 [Processor 0 of 0] [INFO]: Finished reading input in 6.720000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=d383c0
+Thu May  4 18:31:36 2017 [Processor 0 of 0] [INFO]: Initializations done. About to read input..
+Thu May  4 18:31:36 2017 [Processor 0 of 0] [INFO]: Opened input file. About to allocate memory
+Thu May  4 18:31:36 2017 [Processor 0 of 0] [INFO]: Memory request for Points complete
+4194304 points read into memory from file.
+Thu May  4 18:31:40 2017 [Processor 0 of 0] [INFO]: About to allocate memory for edges
+Thu May  4 18:31:40 2017 [Processor 0 of 0] [INFO]: Memory allocated for edges
+Thu May  4 18:31:43 2017 [Processor 0 of 0] [INFO]: Finished reading input in 6.680000 seconds
+[-1] MPI startup(): Imported environment partly inaccesible. Map=0 Info=9e03c0
+[0] MPI startup(): Multi-threaded optimized library
+[0] MPI startup(): tcp data transfer mode
+[1] MPI startup(): tcp data transfer mode
+[0] MPI startup(): Rank    Pid      Node name                        Pin cpu
+[0] MPI startup(): 0       32429    cpn-f07-13.cbls.ccr.buffalo.edu  +1
+Thu May  4 18:31:43 2017 [Processor 1 of 2] [INFO]: Begin
+[0] MPI startup(): 1       32430    cpn-f07-13.cbls.ccr.buffalo.edu  +1
+Thu May  4 18:31:43 2017 [Processor 0 of 2] [INFO]: Begin
+Thu May  4 18:31:53 2017 [Processor 0 of 2] [INFO]: Number of Edges: 26321645
+Thu May  4 18:31:53 2017 [Processor 0 of 2] [INFO]: Finished triangulation of local points in 10.410000 seconds
+Thu May  4 18:31:53 2017 [Processor 1 of 2] [INFO]: Number of Edges: 26319630
+Thu May  4 18:31:53 2017 [Processor 1 of 2] [INFO]: Finished triangulation of local points in 10.470000 seconds
+Thu May  4 18:31:53 2017 [Processor 1 of 2] [INFO]: Sending to 0
+Thu May  4 18:31:53 2017 [Processor 0 of 2] [INFO]: Memory allocated for incoming edges
+Thu May  4 18:31:53 2017 [Processor 0 of 2] [INFO]: Memory allocated for incoming points
+Thu May  4 18:31:53 2017 [Processor 0 of 2] [INFO]: Receiving from 1
+Thu May  4 18:31:53 2017 [Processor 1 of 2] [INFO]: About to send 26319630 edges
+Thu May  4 18:31:53 2017 [Processor 0 of 2] [INFO]: About to receive 26319630 edges
+Thu May  4 18:31:54 2017 [Processor 1 of 2] [INFO]: Finished merging in 0.810000 seconds
+Thu May  4 18:31:54 2017 [Processor 1 of 2] [INFO]: Total execution time is 18.010000 seconds
+Thu May  4 18:31:54 2017 [Processor 1 of 2] [INFO]: Actual Computation Time (with comm.cost) is 11.280000 seconds
+Thu May  4 18:31:55 2017 [Processor 0 of 2] [INFO]: About to merge both regions
+Thu May  4 18:31:55 2017 [Processor 0 of 2] [INFO]: Done merging :)
+Thu May  4 18:31:55 2017 [Processor 0 of 2] [INFO]: Finished re-assignments
+Thu May  4 18:31:55 2017 [Processor 0 of 2] [INFO]: Finished merging in 1.550000 seconds
+Thu May  4 18:31:55 2017 [Processor 0 of 2] [INFO]: Total execution time is 18.660000 seconds
+Thu May  4 18:31:55 2017 [Processor 0 of 2] [INFO]: Actual Computation Time (with comm.cost) is 11.960000 seconds
+Thu May  4 18:32:01 2017 [Processor 1 of 2] [INFO]: End
+Thu May  4 18:32:01 2017 [Processor 0 of 2] [INFO]: End
+================================================
+-rw-r--r-- 1 adarshpr cse633s17 194657067 May  4 18:32 dt-edges.txt
+Files cleanedup!
+Finished!

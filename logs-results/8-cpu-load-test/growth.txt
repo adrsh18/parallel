@@ -1,0 +1,17 @@
+2p10/dt.log.1:Wed May 10 16:53:32 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+2p11/dt.log.1:Wed May 10 17:50:54 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.020000 seconds
+2p12/dt.log.1:Wed May 10 17:50:54 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.020000 seconds
+2p13/dt.log.1:Wed May 10 17:50:54 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.030000 seconds
+2p14/dt.log.1:Wed May 10 16:55:41 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.070000 seconds
+2p15/dt.log.1:Wed May 10 16:57:46 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.160000 seconds
+2p16/dt.log.1:Wed May 10 16:57:46 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.310000 seconds
+2p17/dt.log.1:Wed May 10 16:57:45 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.540000 seconds
+2p18/dt.log.1:Wed May 10 16:59:56 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 1.170000 seconds
+2p19/dt.log.1:Wed May 10 16:59:57 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 2.400000 seconds
+2p20/dt.log.1:Wed May 10 17:00:00 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 4.970000 seconds
+2p21/dt.log.1:Wed May 10 17:02:21 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 10.280000 seconds
+2p22/dt.log.1:Wed May 10 17:55:43 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 21.400000 seconds
+2p6/dt.log.1:Wed May 10 16:47:08 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+2p7/dt.log.1:Wed May 10 16:51:24 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+2p8/dt.log.1:Wed May 10 16:51:25 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
+2p9/dt.log.1:Wed May 10 16:51:25 2017 [Processor 0 of 8] [INFO]: Actual Computation Time (with comm.cost) is 0.000000 seconds
